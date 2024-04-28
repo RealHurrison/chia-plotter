@@ -141,7 +141,7 @@ int main(int argc, const char** argv)
     DISPLAY(WELCOME_MESSAGE);
     if (argc<2) badusage(programName);
 
-    for(i = 1; i <= argc; i++) {
+    for(i = 1; i < argc; i++) {
         const char* argument = argv[i];
 
         if(!argument) continue;   /* Protection if argument empty */
